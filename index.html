@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Online Shopping</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="header">
+  <h1>Online Shopping Website</h1>
+</div>
+<div class="navbar1">
+
+  <div class="dropdown1">
+    <button class="dropbtn1">MEN<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content1">
+      <div style="display: flex;">
+        <div class="nav nav-tabs" style="padding: 50px; display: block;">
+          <label style="color: #f54293; font-weight: bold;">Shoes</label>
+          <a class="nav-link" id="menshoe-tab" data-toggle="tab" href="#openlacing">Open Lacing</a>
+          <a class="nav-link" id="menshoe-tab1" data-toggle="tab" href="#closedlacing">Closed Lacing</a>
+          <a class="nav-link" id="menshoe-tab2" data-toggle="tab" href="#perforations">perforations</a>
+          <a class="nav-link" id="menshoe-tab3" data-toggle="tab" href="#strap">Strap & Buckle</a>
+          <a class="nav-link" id="menshoe-tab4" data-toggle="tab" href="#nolace">No Lace</a>
+        </div>
+        <div class="nav nav-tabs" style="padding: 50px; display: block;">
+          <label style="color: #f54293; font-weight: bold;">Slippers</label>
+          <a class="nav-link" id="menslip-tab" data-toggle="tab" href="#sandals">Sandals</a>
+          <a class="nav-link" id="menslip-tab1" data-toggle="tab" href="#floaters">Floaters</a>
+          <a class="nav-link" id="menslip-tab2" data-toggle="tab" href="#flipflops">Flip Flops</a>
+          <a class="nav-link" id="menslip-tab3" data-toggle="tab" href="#rubberyshape">Rubber Y shape</a>
+          <a class="nav-link" id="menslip-tab4" data-toggle="tab" href="#withtoe">With Toe</a>
+          <a class="nav-link" id="menslip-tab5" data-toggle="tab" href="#withouttoe">Without Toe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown1">
+    <button class="dropbtn1">WOMEN<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content1">
+      <div style="display: flex;">
+        <div class="nav nav-tabs" style="padding: 50px; display: block;">
+          <label style="color: #f54293; font-weight: bold;">Shoes</label>
+          <a class="nav-link" id="womenshoe-tab" data-toggle="tab" href="#balletflats">Ballet Flats</a>
+          <a class="nav-link" id="womenshoe-tab1" data-toggle="tab" href="#maryjanes">Mary Janes</a>
+          <a class="nav-link" id="womenshoe-tab2" data-toggle="tab" href="#loafer">Loafer</a>
+          <a class="nav-link" id="womenshoe-tab3" data-toggle="tab" href="#oxfords">Oxfords</a>
+          <a class="nav-link" id="womenshoe-tab4" data-toggle="tab" href="#anklebooties">Ankle Booties</a>
+        </div>
+        <div class="nav nav-tabs" style="padding: 50px; display: block;"">
+          <label style="color: #f54293; font-weight: bold;">Slippers</label>
+          <a class="nav-link" id="womenslip-tab" data-toggle="tab" href="#twostrap">Two Strap Sandals</a>
+          <a class="nav-link" id="womenslip-tab1" data-toggle="tab" href="#pumps">Pumps</a>
+          <a class="nav-link" id="womenslip-tab2" data-toggle="tab" href="#womenflipflops">Flip Flops</a>
+          <a class="nav-link" id="womenslip-tab3" data-toggle="tab" href="#tbar">T-Bar Sandals</a>
+          <a class="nav-link" id="womenslip-tab4" data-toggle="tab" href="#womenwithtoe">With Toe</a>
+          <a class="nav-link" id="womenslip-tab5" data-toggle="tab" href="#womenwithouttoe">Without Toe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown1">
+    <button class="dropbtn1">ACCESSORIES<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content1">
+      <div style="display: flex;">
+        <div class="nav nav-tabs" style="padding: 50px; display: block;">
+          <label style="color: #f54293; font-weight: bold;">Shoe Polish</label>
+          <a class="nav-link" id="accessories-tab1" data-toggle="tab" href="#liquidbrown">Liquid Polish</a>
+          <a class="nav-link" id="accessories-tab2" data-toggle="tab" href="#pasteblack">Paste Polish</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="openlacing">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Open Lacing</h2>
+          <img src="openlacing.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Open Lacing</h2>
+          <img src="open.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="closedlacing">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Closed Lacing</h2>
+          <img src="closedlacing.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Closed Lacing</h2>
+          <img src="openlacing1.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="perforations">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Perforations</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Perforations</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="strap">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Strap & Buckle</h2>
+          <img src="strap.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Strap & Buckle</h2>
+          <img src="strap1.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nolace">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>No Lace</h2>
+          <img src="nolace.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>No Lace</h2>
+          <img src="nolace1.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="sandals">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Sandals</h2>
+          <img src="sandal1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Sandals</h2>
+          <img src="sandal2.jpeg">
+          <h3>Blue Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="floaters">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Floaters</h2>
+          <img src="floater1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Floaters</h2>
+          <img src="floater2.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="flipflops">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Flip Flops</h2>
+          <img src="flipflop1.jpeg">
+          <h3>Black Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Flip Flops</h2>
+          <img src="flipflop2.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="rubberyshape">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Rubber Y shape</h2>
+          <img src="rubber1.jpeg">
+          <h3>Blue Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Rubber Y shape</h2>
+          <img src="rubber2.jpeg">
+          <h3>White Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="withtoe">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>With Toe</h2>
+          <img src="with1.jpeg">
+          <h3>Pink Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>With Toe</h2>
+          <img src="with2.jpeg">
+          <h3>Blue Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="withouttoe">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Without Toe</h2>
+          <img src="without1.jpeg">
+          <h3>Orange Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Without Toe</h2>
+          <img src="without2.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="balletflats">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Ballet Flats</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Ballet Flats</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="maryjanes">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Mary Janes</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Mary Janes</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="loafer">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Loafer</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Loafer</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="oxfords">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Oxfords</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Oxfords</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="anklebooties">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Ankle Booties</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Ankle Booties</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="twostrap">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Two Strap Sandals</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Two Strap Sandals</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pumps">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Pumps</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Pumps</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="womenflipflops">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Flip Flops</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Flip Flops</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tbar">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>T-Bar Sandals</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>T-Bar Sandals</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="womenwithtoe">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>With Toe</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>With Toe</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="womenwithouttoe">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Without Toe</h2>
+          <img src="perforation1.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Without Toe</h2>
+          <img src="perforation.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="liquidbrown">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Liquid Brown Polish</h2>
+          <img src="polish.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Liquid Brown Polish</h2>
+          <img src="polish1.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pasteblack">
+      <div style="display: flex;">
+        <div style="padding: 50px;">
+          <h2>Paste Black Polish</h2>
+          <img src="brown.jpeg">
+          <h3>Brown Color</h3>
+        </div>
+        <div  style="padding: 50px;">
+          <h2>Paste Black Polish</h2>
+          <img src="black.jpeg">
+          <h3>Black Color</h3>
+        </div>
+      </div>
+    </div>
+
+  <div class="tab-pane fade show active" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;">
+    <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p></p>
+      <h3>More Text</h3>
+      <p></p>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div>
+    </div>
+    <div class="main">
+      <h2>TITLE HEADING</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p></p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2>&COPY; Zoho Corportion</h2>
+</div>
+
+</body>
+</html>
