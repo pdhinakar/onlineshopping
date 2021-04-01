@@ -46,7 +46,11 @@ body {
   font-family: inherit;
   margin: 0;
 }
-
+.zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
 .navbar1 a:hover {
   background-color: #5e5b5e;
 }
