@@ -17,6 +17,12 @@ body {
   margin: 0;
 }
 
+.zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
 .navbar1 {
   overflow: hidden;
   background-color: #333;
@@ -46,11 +52,7 @@ body {
   font-family: inherit;
   margin: 0;
 }
-.zoom:hover {
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); 
-}
+
 .navbar1 a:hover {
   background-color: #5e5b5e;
 }
@@ -112,10 +114,6 @@ body{
     cursor: pointer;
 }
 
-h3{
-    font-family: 'Roboto Mono', monospace;
-    color: var(--headers);
-}
 /* BANNER */
 .banner{
     position: 0px;
@@ -140,13 +138,12 @@ h3{
 
 /* PRODUCTS */
 .product-container{
-    margin-left: 29%;
-    margin-right: 29%;
     display:grid;
     grid-template-columns: 350px 350px;
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    justify-content: center;
 }
 
 .product-container1{
@@ -222,7 +219,7 @@ h3{
 }
 
 .contact-form #message{
-    height: 200px;
+    height: 150px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 5px;
